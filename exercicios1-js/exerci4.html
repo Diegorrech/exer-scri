@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--4. Faça um programa pedindo para o usuário informar o ano do seu nascimento e o seu nome.
+        Se o nome dele for Paulo ou Mara e a idade estiver entre 18 a 40, mostre a resposta como verdadeira:
+    -Mostre uma mensagem pedindo o ano de nascimento do usuário
+    -Calcule a sua idade
+    -Mostre uma mensagem pedindo o nome do usuário
+    - Faça a função para verificar se a idade do usuário é maior ou igual a dezoito E menor ou igual a 40. Verifique ainda se ele se chama Paulo ou Mara.
+    -->
+
+    <script>
+
+        let ano_nasc = parseInt(prompt("informe o ano de seu nascimento"));
+        let nome = prompt("informe seu nome");
+
+        let ano_atual=2022;
+        let idade = ano_atual - ano_nasc;
+
+        if((nome == "paulo") ||( nome=="maria") && (idade>= 18) && (idade<=40)){
+             document.write("resposta verdadeira");
+
+        }else{
+            document.write("resposta false");
+
+        }
+
+    </script>
+</body>
+</html>

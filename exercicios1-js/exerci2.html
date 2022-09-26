@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var colegas = parseInt(prompt("informe o quantidades de colegas "));
+        var chocolate =parseInt(window.prompt("informe a quantidade de chocolates comprados," + 
+        "deve ser maior que o valor de amigos"));
+        
+        let rest_div = (chocolate%colegas);
+        let qtd_faltante =(colegas-rest_div);
+        let total_choco = (qtd_faltante+chocolate) / colegas;
+        
+
+        document.write("quantidades de amigos e de " + colegas + "<br>");
+        document.write(" a quantidade de chocolates comprados e de " + chocolate + "<br>");
+        document.write(" o valor de sobras de chocolate e de " + rest_div + "<br>");
+        document.write("chocolates faltante  " + qtd_faltante + "<br>");
+        document.write("apos fazer a compra dos chocolates faltantes" + "<b>");
+        document.write("agora divido entre seus amigos igualmente fica " + total_choco + " com cada um " + " <br>");
+
+
+    </script>
+
+</body>
+
+</html>

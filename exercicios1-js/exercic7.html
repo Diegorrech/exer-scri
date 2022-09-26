@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!--
+    7 -  Para a cobrança mensal das tarifas de água de uma determinada cidade 
+    é considerado as faixas de consumo, sabendo que:
+
+    - até 20m3 => R$1,60/m3
+    - de 21 a 50m3 -> R$2,80/m3
+    - acima de 50m3 -> R$4,20/m3
+    
+    Uma vez descoberta a faixa em que se encaixa o consumidor, faça o calculo do 
+    valor a ser pago e aplique o desconto se cumprir o requisito:
+    
+    - Se valor total for inferior a R$100,00, aplique 5% de desconto.
+    - Se valor total for acima de R$200,00, aplique 10% de acréscimo. -->
+
+    <script>
+
+        let taxa1 = 1.60;
+        let taxa2 = 2.80;
+        let taxa3 = 4.20;
+        
+
+
+        let consumo = parseInt(prompt("por favor digite o consumo de agua em sua casa "));
+
+        if (consumo <= 20) {
+            resultado = consumo * taxa1;
+            if (resultado < 100) {
+                total = resultado - (resultado * 0.05);
+            }
+            if (resultado >= 100 && resultado < 200) {
+                total = resultado;
+            }
+            if (resultado > 200) {
+                total = resultado * 0.10;
+            }
+        }
+        if (consumo > 21 && consumo < 50) {
+            resultado = consumo * taxa2;
+            if (resultado < 100) {
+                total = resultado - (resultado * 0.05);
+            }
+            if (resultado >= 100 && resultado < 200) {
+                total = resultado;
+            }
+            if (resultado > 200) {
+                total = resultado + (resultado * 0.10);
+            }
+
+        }
+        if (consumo >= 50) {
+            resultado = consumo * taxa3;
+            if (resultado < 100) {
+                total = resultado - (resultado * 0.05);
+            }
+            if (resultado >= 100 && resultado < 200) {
+                total = resultado;
+            }
+            if (resultado > 200) {
+                total = resultado + (resultado * 0.10);
+            }
+
+        }
+        let soma = total.toFixed(2);
+        alert("resultado da fatura de agua e de : R$" + soma);
+
+    </script>
+
+
+
+</body>
+
+</html>

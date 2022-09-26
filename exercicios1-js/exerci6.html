@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        let peso = parseFloat(prompt("por favor digite seu peso"));
+        let altura = parseFloat(prompt("por favor digite sua altura"));
+
+        imc = peso / (altura * altura);
+
+
+        if (imc < 18.5) {
+            document.write("abaixo do peso, imc = " + imc + "<br>");
+
+        }
+        if (imc > 18.5 && imc < 24.9) {
+            document.write("peso saudavel , imc = " + imc + "<br>");
+
+        }
+        if (imc > 25 && imc < 29.9) {
+            document.write("sobre peso, imc = " + imc + "<br>");
+
+        }
+        if (imc > 30 && imc < 39.9) {
+            document.write("obeso , imc = " + imc + "<br>");
+
+        }
+        if (imc > 40) {
+            document.write("muito obeso , imc = " + imc + "<br>");
+        }
+
+
+
+    </script>
+</body>
+
+</html>
